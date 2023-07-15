@@ -13,6 +13,31 @@
     <link rel="stylesheet" href="./css/estilo.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/responsivo.css" />
+    <style>
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .promo-card {
+        background-color: #ffcc00;
+        width: 200px;
+        height: 100px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+        animation: pulse 2s infinite;
+      }
+    </style>
   </head>
   <body>
     <header class="cabecalho">
@@ -28,10 +53,9 @@
             class="produto selecionado"
             id="cb"
             data-name="camisa branca dourada"
-            data-description="Camisa branca Manga Longa com detalhes dourados R$ 145,00"
-          >
+            data-description="Camisa branca Manga Longa com detalhes dourados R$ 145,00">
             <img src="./img/card-cb.jpg" alt="produto camisa branca dourada" />
-                        
+            <div class="promo-card">Promoção <br> 10% desc.</div>
           </li>
 
           <li
@@ -41,6 +65,7 @@
             data-description="Camisa vermelha Manga Longa com detalhes dourados R$ 145,00"
           >
             <img src="./img/card-cv.jpg" alt="produto jean-grey" />
+            <div class="promo-card">Promoção <br> 30% desc.</div>
           </li>
 
           <li
@@ -50,33 +75,7 @@
             data-description="Jaqueta preta peluciada R$ 299,00"
           >
             <img src="./img/card-jp.jpg" alt="produto lince-negra" />
-          </li>
-
-          <li
-            class="produto"
-            id="jr"
-            data-name="Jaqueta Rosa curta"
-            data-description="Jaqueta Rosa curta R$ 199,00"
-          >
-            <img src="./img/card-jr.jpg" alt="produto noturno" />
-          </li>
-
-          <li
-            class="produto"
-            id="ml"
-            data-name="Moleton Los Angeles"
-            data-description="Moletom Los Angeles R$189,00"
-          >
-            <img src="./img/card-ml.jpg" alt="produto tempestade" />
-          </li>
-
-          <li
-            class="produto"
-            id="j"
-            data-name="Calça Jeans"
-            data-description="Calça Jeans R$ 189,00"
-          >
-            <img src="./img/card-j.jpg" alt="produto vampira" />
+            <div class="promo-card">Promoção <br>30% de desc.</div>
           </li>
 
           <li
@@ -86,6 +85,7 @@
             data-description="Jaqueta Rosa com flores R$ 150,00."
           >
             <img src="./img/card-jrf.jpg" alt="produto wolverine" />
+            <div class="promo-card">Promoção <br> 50% de desc.</div>
           </li>
         </ul>
       </section>
@@ -97,39 +97,11 @@
         />
         <div class="informacoes-produto">
           <h2 class="nome-produto" id="nome-produto">camisa branca dourada</h2>
-          <p class="descricao-produto" id="descricao-produto">
+          <p class="descricao-produto" id="descricao-produto" class="promo-card">
             Camisa branca Manga Longa com detalhes dourados R$ 145,00
-          </p>                   
+          </p>
         </div>
       </section>
-      <style>
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .card {
-            background-color: #ffcc00;
-            width: 200px;
-            height: 100px;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-            color:red;
-            animation: pulse 1s infinite;
-        }
-    </style>
-    <div class="card">
-        Promoções 10% desc.
-    </div>
     </main>
     <script src="./js/index.js"></script>
   </body>
