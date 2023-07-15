@@ -66,6 +66,15 @@ body::before{
     width: 100%;
     text-align: center;
 }
+
+.selecao-de-produtos .produtos .titulo2{
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color:red;
+}
 .lista-de-produtos .produto img{
     width: 100%;
     height: 100;
