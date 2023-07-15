@@ -149,4 +149,5 @@ body::before{
     font-weight: bold;
     color:red;
     animation: pulse 1s infinite;
+    padding: 2px;
 }
