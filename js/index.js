@@ -1,7 +1,7 @@
 const produtos = document.querySelectorAll('.produto');
 
 produtos.forEach((produto)=>{
-    produto.addEventListener('mouseenter', () => {
+    produto.addEventListener('click', () => {
 
         if(window.innerWidth < 450){
             window.screenTop({top:0 , behavior: 'smooth'});
