@@ -99,4 +99,45 @@ body::before{
     width: 420px;
 }
 
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
 
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    background-color: #ffcc00;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:red;
+    animation: pulse 1s infinite;
+}
