@@ -1,8 +1,8 @@
-@media (max-width: 920px){
+@media screen and (max-width: 768px){
     .cabecalho .logo{
         max-width: 190px;
     }
-
+ 
     .selecao-de-produtos{
         flex-direction: column-reverse;
         max-width: 430px;
